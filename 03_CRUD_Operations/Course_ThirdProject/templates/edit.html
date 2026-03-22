@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD - Редактирование</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tbody>
+                {{ form.as_table }}
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Сохранить"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
